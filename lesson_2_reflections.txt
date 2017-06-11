@@ -1,22 +1,33 @@
 What happens when you initialize a repository? Why do you need to do it?
 
-It creates a .git metadata
+-It creates a .git metadata
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-Staging area are files that are a part of the logical commit. Working directory holds all the files including those that aren't in the commit. It offers value because you don't need to commit all files if those files are untouched.
+-Staging area are files that are a part of the logical commit. Working directory holds all the files including those that aren't in the commit. It offers value because you don't need to commit all files if those files are untouched.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+-You can run git diff --staged to compare the changes in the staging area and most recent commit
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+-When you want to make changes to a program and add features w/o removing some of the current features
+
 How do the diagrams help you visualize the branch structure?
+
+-You can see which brand you're working on and if they have certain commits
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+-Merging different features together into master.  You can see the separate commits added in each feature
+
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+-Pros: combine codes automatically
+-Cons: may include same code, but written differently
